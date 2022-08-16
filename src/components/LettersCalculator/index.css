@@ -1,0 +1,147 @@
+.app-container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.counter-image-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+@media screen and (min-width: 992px) {
+  .counter-image-block {
+    flex-direction: row;
+  }
+}
+
+.counter-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .counter-block {
+    align-items: flex-start;
+    order: 0;
+  }
+}
+
+.heading {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 46px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .heading {
+    text-align: start;
+    font-size: 46px;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-text {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.input {
+  color: #ffffff;
+  background-color: transparent;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #e4e7eb;
+  border-radius: 4px;
+  margin-top: 8px;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .input {
+    width: 350px;
+  }
+}
+
+.counting-text {
+  align-self: center;
+  color: #219a6f;
+  background-color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-top: 32px;
+  padding: 18px;
+  padding-right: 24px;
+  padding-left: 24px;
+  width: 200px;
+}
+
+@media screen and (min-width: 992px) {
+  .counting-text {
+    align-self: start;
+    padding: 24px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .counting-text {
+    padding: 30px;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+}
+
+.image {
+  height: 250px;
+  width: 150px;
+  margin-left: 10px;
+}
+
+.image {
+  width: 100%;
+  order: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .image {
+    width: 550px;
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image {
+    width: 700px;
+  }
+}
